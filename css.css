@@ -1,0 +1,25 @@
+label,
+button {
+    display: inline-block;
+    background-color: #7f9ccb;
+    font-family: sans-serif;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px ridge black
+}
+
+label:hover {
+    background-color: #2d5ba3
+}
+
+label:active {
+    background-color: #0d3f8f
+}
+
+input {
+    display: none
+}
+
+div:not(:last-of-type) {
+    margin-bottom: inherit
+}
