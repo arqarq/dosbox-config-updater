@@ -40,6 +40,9 @@ function fillAutoexec(map, ptr) {
 }
 
 function fillMissedValues(missedLines, ptr) {
+    if (!missedLines.length) {
+        return
+    }
     file[ptr.lastAutoexecLine++] += r
     file[ptr.lastAutoexecLine] = '# mismatched values'
     missedLines.forEach(it => {
